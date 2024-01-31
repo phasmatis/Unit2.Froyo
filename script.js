@@ -37,3 +37,10 @@ if (userInput !== null && userInput !== "") {
 // input.split("") method helps break up the users input string into an array of substrings using the comma as a de limiter
 // example of user input: "vanilla,coffee,strawberry" will be fixed to ["vanilla", "coffee", "strawberry"]
 // .map((flavor) => flavor.trim()) removed the whitespace around each flavor.
+
+/* flavors.forEach(flavor => {...}): This iterates over each element (flavor) in the flavors array.
+observedFlavors[flavor] = (observedFlavors[flavor] || 0) + 1;: This line updates the observedFlavors object by incrementing the count of each flavor.
+If observedFlavors[flavor] already exists (is truthy), it is incremented by 1.
+If observedFlavors[flavor] doesn't exist (is falsy, meaning the flavor is encountered for the first time), it defaults to 0 and is then incremented by 1.
+After this loop, observedFlavors will have counts for each unique froyo flavor observed in the user's input.*/ 
+  
